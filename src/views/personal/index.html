@@ -1,0 +1,60 @@
+<div class="personal">
+  <section class="header">
+    <ul class="nav">
+      <li ng-repeat="item in personList" ng-bind="item.name" ng-click="navClick(item.url)"></li>
+    </ul>
+  </section>
+  <section class="content">
+    <div class="info clearfix">
+      <div class="photo">
+        <div class="imgs">
+          <img src="./css/images/personal/bob_baobao.jpg" />
+        </div>
+        <div class="focus_num">
+          <b>166</b>
+          <span>关注</span>
+        </div>
+        <div class="fans_num">
+          <b>8888</b>
+          <span>粉丝</span>
+        </div>
+      </div>
+      <div class="detail">
+        <div class="icon"> &#9998;</div>
+        <p class="nickname" ng-bind="nickName"></p>
+        <ul class="info_detail clearfix">
+          <li ng-repeat= "item in personDetail" ng-bind="item.value"></li>
+        </ul>
+        <p class="person_sign">
+          爱生活，爱工作
+        </p>
+        <p class="level">
+          <span class="level_num">LV.5</span>
+          <span>骑士</span>
+        </p>
+      </div>
+    </div>
+    <div class="list">
+      <div class="tab">
+        <ul class="clearfix">
+          <li class="tab_item" ng-class="{'active_tab': item.isActiveTab}" 
+          ng-repeat="item in tabList" ng-bind="item.name" ng-click="tabClick($index)"></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="default">
+          <span ng-bind="tabContent"></span>
+        </div>
+      </div>
+    </div>
+    <div class="info_edit" ng-show="false">
+      <div class="mask"></div>
+      <div class="wrap">
+        <div class="edit_content">
+          `正在开发`
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+</div>

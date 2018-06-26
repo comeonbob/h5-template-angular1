@@ -1,0 +1,55 @@
+<article class="code_wrap">
+    <aside class="search" ng-if= "false">
+        <form class="search_box">
+            <input type="textbox" placeholder="只有你想不到的"/><!--
+            --><span>找找看呗</span>
+        </form>
+    </aside>
+    <aside class="pg_wrap">
+        <!--<button ng-click="moveClick(1)">up</button>
+        <button ng-click="moveClick(0)">down</button>-->
+        <div ng-include="'views/common/nav.html'"></div>
+        <div class="banner"></div>
+        <div class="filter">
+            <div class="filter_box">
+                <span class="move_icon" ng-class="{true:'disable_move'}[leftDisabled]" ng-click="moveClick('left')">&#60;</span>
+                <div class="solidermove">
+                    <ul class="ulmove" ng-style="filterStyle">
+                        <li ng-repeat="item in filterData">
+                            <span class="img_move">
+                                <img ng-src="./css/images/code/filter_{{item.en_name}}.png"/>
+                            </span>
+                            <span class="text_move">
+                                <em>{{item.ch_name}}</em>
+                                <span>{{item.num}}个知识库</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <span class="move_icon right_icon" ng-class="{true:'disable_move'}[rightDisabled]" ng-click="moveClick('right')">&#62;</span>
+            </div>
+        </div>
+        <div class="content">
+            <p class="title">热门知识库</p>
+            <ul class="content_list">
+                <li ng-repeat="item in dataList">
+                    <div class="bg_rec">
+                        <img class="pic_rec" ng-src="./css/images/code/code_{{item.en_name}}_r.jpg"/>
+                        <a>
+                            <img class="pic_cir" ng-src="./css/images/code/code_{{item.en_name}}_c.jpg" />
+                        </a>
+                    </div>
+                    <div class="list_text">
+                        <a class="name">{{item.ch_name}}</a>
+                        <span class="desc">{{item.desc}}</span>
+                    </div>
+                </li>
+            </ul>
+            <p class="more">
+                <span class="move_text">更多知识库</span>
+                <span class="move_more"></span>
+            </p>
+        </div>
+
+    </aside>
+</article>

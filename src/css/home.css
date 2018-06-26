@@ -1,0 +1,265 @@
+/*======================================================================================
+Name: home.css
+Description: 首页模块样式
+Author: Bob Gao
+Date: 2017/01/14
+=======================================================================================*/
+.home_wrap{
+    background-color: #0c021c;
+    width: 100%;
+    /*height: 100%;*/
+    display: block;
+    background-image: url('./images/home/home_bg.jpg');
+    background-position-x: 50%;
+    background-position-y: 667px;
+    background-repeat: no-repeat;
+    min-width: 1280px;
+    position: relative;
+}
+.home_move{
+    top: -222px;
+}
+.home_banner{
+    background-color: #171e50;
+    background-image: url('./images/home/landing_banner.jpg');
+    background-position-x: 50%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 662px;
+    overflow: hidden;
+}
+.banner_video{
+    left: 50%;
+    position: absolute;
+    margin-left: -1150px;
+    top: 0;
+}
+.home_main{
+    background: url('./images/home/main_bg.png') no-repeat center top;
+    height: 667px;
+    position: relative;
+    top: -183px;
+    text-align: center;
+}
+.home_main .home_main_wrap{
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    position: relative;
+}
+.home_main .home_nav{
+    width: 441px;
+    height: 276px;
+    position: absolute;
+    z-index: 1000;
+    top: -47px;
+    left: 279px;
+}
+.home_nav span{
+    background: url('./images/home/home_tools.png') no-repeat 0 0;
+    display: block;
+}
+.home_nav .reg{
+    width: 230px;
+    height: 107px;
+    background-position: -6px -370px;
+    position: absolute;
+    top: 103px;
+    left: -10px;
+}
+.home_nav .enter{
+    width: 230px;
+    height: 107px;
+    background-position: -236px -370px;
+    position: absolute;
+    top: 103px;
+    right: -10px;
+    z-index: 10;
+}
+.home_nav .download{
+    width: 283px;
+    height: 276px;
+    background-position: -6px -758px;
+    position: absolute;
+    top: 0px;
+    left: 71px;
+    z-index: 12;
+    animation: rodownload 15s 3s cubic-bezier(1, 0, 0, 1) infinite;   
+}
+.home_nav .shoot_hole{
+    width: 59px;
+    height: 49px;
+    background-position: -78px -1366px;
+    position: absolute;
+    top: 195px;
+    left: 427px;
+    z-index: 10;    
+}
+.home_nav .center{
+    width: 172px;
+    height: 168px;
+    background-position: -43px -1112px;
+    position: absolute;
+    top: 62px;
+    left: 131px;
+    z-index: 13;    
+}
+
+.home_main .home_list{
+    margin: 0 auto;
+    position: relative;
+    top: 240px;
+    display: inline-block;
+}
+.home_main .home_list li{
+    display: inline-block;
+    margin-right: 37px;
+    transition: .2s ease-in-out;
+}
+.home_main .home_list li:hover{
+    box-shadow: -3px 5px 55px 3px #ffd99b, -3px 5px 31px 13px #888;
+    transform: translate(3px, -6px);
+}
+.home_list .pic{
+    width: 321px;
+    height: 224px;
+    background: url('./images/home/list_pic_bg.png') no-repeat 0 0;
+    margin-bottom: -19px;
+}
+.home_list .pic img{
+    width: 306px;
+    height: 202px;
+    position: relative;
+    top: 9px;
+    left: 8px;
+}
+.home_list .title{
+    background: url('./images/home/list_title_bg.png') no-repeat 0 -120px;
+    width: 337px;
+    height: 87px;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+}
+.home_list .title a{
+    font-size: 21px;
+    color: #821a0b;
+    font-weight: 700;
+    text-shadow: 0 0 1px #ffd99b;
+}
+.home_pointer{
+    position: absolute;
+    top: 1045px;
+    right: 60px;
+    width: 65px;
+    height: 67px;
+    background: url('./images/home/home_tools.png') no-repeat -184px -1366px;
+}
+.home_pointer span{
+    background: url('./images/home/home_tools.png') no-repeat -354px -1370px;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 4px;
+    left: 36px;
+    animation: hand 3s cubic-bezier(0.68,-.55,.265,1.55) infinite;
+}
+.home_footer{
+    background: url('./images/home/footer_bg.jpg') no-repeat center top;
+    /*height: 471px;*/
+    height: 150px;
+    position: relative;
+    margin-top: -184px;
+}
+.home_footer .f_bussiness{
+    width: 1000px;
+    position: relative;
+    left: 50%;
+    margin-left: -500px;
+    text-align: center;
+    padding-top: 70px;
+    color: #fff;
+    font-size: 14px;
+}
+.f_bussiness .fb_a{
+    margin-right: 37px;
+    vertical-align: middle;
+}
+.f_bussiness .fb_a .cs_icon{
+    background-image: url('./images/home/f_business.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+.f_bussiness .fb_a .feedback_icon{
+    background-image: url('./images/home/f_business.png');
+    background-repeat: no-repeat;
+    background-position: -30px 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+.f_bussiness .fb_a .joinus_icon{
+    background-image: url('./images/home/f_business.png');
+    background-repeat: no-repeat;
+    background-position: 0 -27px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+
+/* festival: Valenter's Day */
+.home_wrap .festival{
+    position: absolute;
+    width: 270px;
+    height: 129px;
+    top: 214px;
+    left: 50%;
+    margin-left: -135px;
+}
+.home_wrap .festival .action{
+    background-image: url('./images/home/festival_vt2.png');
+    /*background-position-x: 0px;*/
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 129px;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+}
+
+@keyframes hand {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: left bottom;
+    }
+}
+
+@keyframes rodownload {
+    0% {
+        transform: rotate(0deg);
+    }
+    6% {
+        transform: rotate(-15deg);
+    }
+    33%, 100% {
+        transform: rotate(3600deg);
+    }
+}

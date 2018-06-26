@@ -1,0 +1,45 @@
+<div id="demo" class="demo">
+  <div class="banner_wrap" ng-mouseover="stopInterval()" ng-mouseleave="startInterval()">
+    <!-- 图片 -->
+    <div class="photo">
+      <ul class="photo_wrap" ng-class="{'photo_item1':isPageActiveFir, 'photo_item2': isPageActiveSec, 'photo_item3': isPageActiveTir, 'photo_item4': isPageActiveFou, 'photo_item0':isPageActiveZero}">
+        <li class="item_0">
+            <img class="banner_img" src="css/images/demo/banner/banner3.png">
+        </li>
+        <li class="item_1">
+          <img class="banner_img" src="css/images/demo/banner/banner1.png">
+        </li>
+        <li class="item_2">
+          <img class="banner_img" src="css/images/demo/banner/banner2.png">
+        </li>
+        <li class="item_3">
+          <img class="banner_img" src="css/images/demo/banner/banner3.png">
+        </li>
+        <li class="item_4">
+          <img class="banner_img" src="css/images/demo/banner/banner1.png">
+        </li>
+      </ul>
+    </div>
+    <!-- 切换箭头 -->
+    <div class="arrow">
+      <!-- ie 9 -->
+      <span class="left_arrow" ng-click="arrowClick(0)">&#60;</span>
+      <span class="right_arrow" ng-click="arrowClick(1)">&#62;</span>
+      <!-- <i class="arrow_left" ng-click="arrowClick(0)"></i> -->
+      <!-- <i class="arrow_right" ng-click="arrowClick(1)"></i> -->
+    </div>
+  
+    <!-- 分页图标 -->
+    <div class="pagination">
+      <li ng-click="pagiClick(1)">
+          <span ng-class="{'page_active': isPageActiveFir || isPageActiveFou}"></span>
+      </li>
+      <li ng-click="pagiClick(2)">
+          <span ng-class="{'page_active': isPageActiveSec}"></span>
+      </li>
+      <li ng-click="pagiClick(3)">
+          <span ng-class="{'page_active': isPageActiveTir || isPageActiveZero}"></span>
+      </li>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Bob",
+  "scripts": {
+    "start": "grunt.js"
+  },
+  "dependencies": {
+    "angular": "^1.6.0",
+    "angular-route": "^1.6.1",
+    "connect-livereload": "^0.6.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "open": "0.0.5",
+    "serve-index": "^1.8.0",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^2.2.1"
+  }
+}

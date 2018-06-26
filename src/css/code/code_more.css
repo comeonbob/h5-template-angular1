@@ -1,0 +1,120 @@
+/*======================================================================================
+Name: code_more.css
+Description: 更多样式
+Author: Bob Gao
+Date: 2017/09/04
+=======================================================================================*/
+
+.codemore_wrap {
+  width: 100%;
+  background-color: #edf1f5;
+  position: relative;
+}
+.codemore_wrap .nav{
+  height: 62px;
+}
+.codemore_wrap footer{
+  height: 60px;
+}
+.codemore_wrap .content{
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.codemore_wrap .content .c_title {
+  font-size: 16px;
+  color: #333;
+  padding: 0 25px;
+  height: 51px;
+  line-height: 51px;
+  border-bottom: 1px solid #dedede;
+}
+.codemore_wrap .content .select{
+  padding: 5px 20px;
+  margin: 20px 25px;
+}
+.codemore_wrap .content .select .domain{
+  padding: 0;
+  margin: 15px 0;
+}
+.codemore_wrap .content .select .domain .list{
+  font-size: 14px;
+  color: #666;
+  padding-left: 23px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 1020px;
+}
+.codemore_wrap .content .select .domain .all{
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+}
+.codemore_wrap .content .select .domain .list span{
+  margin-right: 26px;
+}
+.codemore_wrap .content .select .type{
+  margin: 15px 0;
+}
+.codemore_wrap .content .list_wrap{
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.codemore_wrap .content .list_wrap .content_list{
+  box-sizing: border-box;
+}
+
+.codemore_wrap .content .list_wrap .content_list li{
+  width: 340px;
+  height: 275px;
+  box-shadow: 0 1px 1px #ccc;
+  float: left;
+  margin: 15px 0px 15px 30px;
+  background-color: #ffffff;
+}
+.codemore_wrap .content .list_wrap .content_list li .bg_rec{
+  width: 340px;
+  height: 90px;
+  position: relative;
+}
+.codemore_wrap .content .list_wrap .content_list li .bg_rec .pic_rec{
+  width: 340px;
+  height: 94px;
+}
+.codemore_wrap .content .list_wrap .content_list li .bg_rec a{
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-color: #fff;
+  border-radius: 80px;
+  box-shadow: 0 1px 3px #ccc;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 36px;
+}
+.codemore_wrap .content .list_wrap .content_list li .bg_rec a .pic_cir{
+  border-radius: 80px;
+}
+.codemore_wrap .content .list_wrap .content_list li .list_text{
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 20px;
+}
+.codemore_wrap .content .list_wrap .content_list li .list_text .name{
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+}
+.codemore_wrap .content .list_wrap .content_list li .list_text .desc{
+  font-size: 12px;
+  color: #666;
+  line-height: 1.8;
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+  word-wrap: break-word;
+}

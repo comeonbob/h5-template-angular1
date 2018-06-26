@@ -1,0 +1,24 @@
+<div class="nav_wrap">
+<header class="header">
+    <div class="header_wrap">
+        <span class="logo"></span>
+        <ul class="nav_list">
+            <li ng-click="navClick('home')">首页</li>
+            <li>我的知识库</li>
+            <li>知识库列表</li>
+            <li ng-click="navClick('skill')">小伎俩</li>
+            <li>加入我们</li>
+        </ul>
+        <div class="search_div">
+            <input class="nav_search" placeholder="找找看呗" />
+            <span class="search_icon"></span>
+        </div>
+        <div class="login">
+            <!-- 未登录 -->
+            <span ng-show="!isLogin" ng-click="navClick('login')">登录</span>
+            <!-- 已登录 -->
+            <span ng-show="isLogin" ng-click="navClick('personal')" ng-bind="userName"></span>
+        </div>
+    </div>
+</header>
+</div>

@@ -1,0 +1,230 @@
+/*======================================================================================
+Name: personal.css
+Description: 个人中心模块样式
+Author: Bob Gao
+Date: 2017/11/10
+=======================================================================================*/
+
+.personal{
+  position: relative;
+  width: 100%;
+  background-color: #e9e9e9;
+  font-size: 12px;
+}
+
+.personal .header{
+  width: 100%;
+  background-color: #fff;
+  border-bottom: solid 2px #e1e1e1;
+}
+
+.personal .header .nav{
+  width: 1170px;
+  margin: 0 auto;
+  height: 49px;
+  line-height: 47px;
+  overflow: hidden;
+}
+.personal .header .nav li{
+  float: left;
+  margin-right: 35px;
+  line-height: 47px;
+  font-size: 16px;
+  color: #727272;
+}
+.personal .header .nav li:hover{  
+  border-bottom: solid 2px #dc3c00;
+  cursor: pointer;
+  color: #666;
+}
+
+.personal .content{
+  width: 1170px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.personal .content .info{
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.personal .content .info .photo{
+  width: 150px;
+  height: 200px;
+  float: left;
+  margin: 20px;
+}
+.personal .content .info .photo .imgs{
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.personal .content .info .photo .focus_num{
+  float: left;
+  width: 72px;
+  height: 32px;
+  border-right: solid 1px #f0f0f0;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  overflow: hidden;
+}
+.personal .content .info .photo b{
+  font-weight: bold;
+  display: block;
+  line-height: 14px;
+  color: #666;
+}
+.personal .content .info .photo .fans_num{
+  float: left;
+  width: 72px;
+  height: 32px;
+  font-size: 14px;
+  color: #999;
+  text-align: center;
+  overflow: hidden;
+}
+.personal .content .info .detail{
+  width: 950px;
+  float: left;
+  margin: 30px 20px 20px 0;
+  position: relative;
+}
+.personal .content .info .detail .icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: solid 1px #666;
+  width: 30px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  font-size: 21px;
+  border-radius: 5px;
+  transform: rotate(90deg);
+  color: #999;
+}
+.personal .content .info .detail:hover .icon{
+  display: block;
+}
+.personal .content .info .detail .icon:hover{ 
+  color: #777;
+  border: solid 1px #555;
+}
+.personal .content .info .detail .nickname{
+  padding: 0 15px;
+  font-size: 24px;
+  color: #333;
+}
+
+.personal .content .info .detail .info_detail li{
+  float: left;
+  padding: 0 15px;
+  margin: 15px 0;
+  font-size: 16px;
+  border-right: solid 1px #d1d0d0;
+}
+.personal .content .info .detail .info_detail li:last-child{
+  border-right: none;
+}
+.personal .content .info .detail .person_sign{
+  padding: 15px 15px 15px 0;
+  margin-left: 15px;
+  font-size: 18px;
+  color: #666;
+  border-top: solid 1px #f0f0f0;
+}
+.personal .content .info .detail .level{
+  padding: 15px;
+  font-size: 16px;
+  color: #666;
+}
+.personal .content .info .detail .level .level_num{
+  margin-right: 20px;
+  display: inline-block;
+  background-color: #ea9d38;
+  padding: 4px 8px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.personal .content .list{
+  width: 1170px;
+}
+.personal .content .list .tab{
+  width: 1168px;
+  height: 48px;
+  border-left: solid 1px #dcdcdc;
+  border-right: solid 1px #dcdcdc;
+  margin: 0 auto;
+}
+.personal .content .list .tab .tab_item{
+  float: left;
+  width: 232px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  background: #eee;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+}
+.personal .content .list .tab .tab_item:last-child{
+  border-right: none;
+  width: 236px;
+}
+.personal .content .list .tab .active_tab{
+  background-color: #fff;
+  border-top: solid 2px #666;
+}
+
+.personal .content .list .content{
+  min-height: 400px;
+  font-size: 16px;
+  background-color: #fff;
+  width: 1168px;
+  border-left: solid 1px #dcdcdc;
+  border-right: solid 1px #dcdcdc;
+}
+.personal .content .list .content .default{
+  width: 100%;
+  text-align: center;
+  line-height: 400px;
+}
+
+.personal footer{
+  background-color: #e9e9e9;
+  height: 150px;
+  width: 100%;
+}
+
+/* 编辑页详细信息 */
+.personal .content .info_edit{
+}
+.personal .content .info_edit .mask{
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+.personal .content .info_edit .wrap{
+  width: 1170px;
+  display: block;
+  top: 200px;
+  opacity: 1;
+  position: absolute;
+  margin: 0 auto;
+}
+.personal .content .info_edit .wrap .edit_content{
+  width: 667px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
